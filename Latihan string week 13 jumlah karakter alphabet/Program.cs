@@ -11,12 +11,12 @@ namespace Latihan_string_week_13_jumlah_karakter_alphabet
         }
         static void StatistikKata(string InputanKata, string InputanKalimat)
         {
-            int count = 0;
+            int Hitung = 0;
             foreach (Match sama in Regex.Matches(InputanKalimat, InputanKata))
             {
-                count++;
+                Hitung++;
             }
-            Console.WriteLine($"{InputanKata.ToUpper()}: {count} KATA");
+            Console.WriteLine($"{InputanKata.ToUpper()}: {Hitung} KATA");
         }
         static void JumlahHuruf(string InputanKalimat)
         {
