@@ -12,8 +12,18 @@ namespace Latihan_string_week_13_jumlah_karakter_alphabet
             for (char i = 'a'; i <= 'z'; i++)
             {
                 int Sama = InputanKalimat.ToCharArray().Count(c => c == i);
-                if (Sama!=0)
-                Console.WriteLine($"{i}: {Sama}");
+                if (Sama != 0)
+                    Console.WriteLine($"{i}: {Sama} HURUF");
+            }
+            Console.WriteLine();
+            char[] Simbol = { '?', '!', ',', '/', '(', ')', '@', ':', ';', '-', '.','_','&','%','$','~','=','+','*','#','"'};
+            for (int i = 0; i <= 20; i++)
+            {
+                if (InputanKalimat.Contains(Simbol[i]))
+                {
+                    int SamaKarakter = InputanKalimat.ToCharArray().Count(c => c == Simbol[i]);
+                    Console.WriteLine($"{Simbol[i]}: {SamaKarakter} HURUF");
+                }
             }
         }
         static void StatistikKata(string InputanKata, string InputanKalimat)
@@ -28,7 +38,7 @@ namespace Latihan_string_week_13_jumlah_karakter_alphabet
         }
         static void JumlahHuruf(string InputanKalimat)
         {
-            Console.Write($"Jumlah huruf pada kalimat adalah: {InputanKalimat.Replace(" ", "").Length}");
+            Console.Write($"JUMLAH HURUF PADA KALIMAT ADALAH: {InputanKalimat.Replace(" ", "").Length}");
 
         }
         static void Main(string[] args)
@@ -56,6 +66,7 @@ namespace Latihan_string_week_13_jumlah_karakter_alphabet
             StatistikHuruf(InputanKalimat);
             StatistikKata(InputanKata, InputanKalimat);
             JumlahHuruf(InputanKalimat);
+            Console.WriteLine();
         }
     }
 }
