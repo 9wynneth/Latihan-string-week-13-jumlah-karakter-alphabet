@@ -43,7 +43,7 @@ namespace Latihan_string_week_13_jumlah_karakter_alphabet
         }
         static void Main(string[] args)
         {
-            Console.Write("MOHON MEMBERI INPUTAN TANPA MENGGUNAKAN HURUF BESAR (KAPITAL), SISTEM AKAN OTOMATIS MERUBAH INPUTAN MENJADI HURUF BESAR (KAPITAL) \nINPUT KALIMAT:");
+            Console.Write("MOHON MEMBERI INPUTAN MENGGUNAKAN HURUF KECIL SEMUA DAN TIDAK MENGGUNAKAN HURUF BESAR (KAPITAL) SAMA SEKALI, SISTEM AKAN OTOMATIS MERUBAH INPUTAN MENJADI HURUF BESAR (KAPITAL) \nINPUT KALIMAT:");
             string InputanKalimat = Console.ReadLine();
             string[] Potongan = InputanKalimat.Split(" ");
             while (Potongan.Length <= 3)
